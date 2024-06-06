@@ -1,0 +1,100 @@
+/*Remove all padding and margin from the document*/
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    /*Set the background image and font of the body*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    background: url("../assets/air_bg.png");
+    background-size: cover;
+    background-position: center;
+    background-size:contain;
+}
+
+header{
+    /*Set the header of the pager*/
+    position: relative;
+    background-color: rgb(102, 187, 68);
+    width: 100%;
+    height: 70px;
+}
+
+nav{
+    /*give the nav bar some padding*/
+    position: relative;
+    left: 3%;
+    top: 20%;
+}
+
+/*Style for all links on this webpage*/
+a {
+    text-decoration: none;
+    color: rgb(241, 241, 241);
+    font-size: 30px;
+    margin: 20px;
+}
+
+/*Style of the div holding the game info*/
+#game_info {
+    width: 50%;
+    height: 400px;
+    /*Align this div to the middle of the screen*/
+    margin: auto;
+    /*Set the background image of the game info*/
+    margin-top: 50px;
+    background: url("../assets/Screenshot\ 2024-06-06\ 113623.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*Style of the game titles*/
+#game_info h1 {
+    /*Center the title and make it large*/
+    text-align: center;
+    font-size: 80px;
+}
+
+/*Style of the game description*/
+#game_info h2 {
+    /*Align the text to the center*/
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    #game_info button {
+        /*Move the button down for small screens*/
+        margin-top: 30%;
+        width: 150px;
+        height: 60px;
+    }
+}
+
+@media (min-width: 600px) {
+    #game_info button {
+        /*Move the button up for large screens*/
+        margin-top: 10%;
+        width: 200px;
+        height: 60px;
+    }
+}
+
+#game_info button {
+    /*Move the button to the center of the page*/
+    margin-left: 50%;
+    
+    /*Set the color and font size of the button*/
+    background-color: rgb(54, 0, 62);
+    color: white;
+    font-size: 20px;
+    border: solid white 2px;
+    border-radius: 20%;
+    /*Center the button*/
+    transform: translate(-50%, -50%);
+}
+

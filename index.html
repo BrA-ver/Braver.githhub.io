@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio</title>
+
+    <!--Connect to the stylesheet-->
+    <link rel="stylesheet" href="CSS/style.css">
+    
+</head>
+<body>
+    <!--Navigatio Section Section-->
+    <header class="navigation">
+        <nav>
+            <!--Each link connect scrolls the page to a specified section when clicked on-->
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <!--Top Section-->
+    <div class="main">
+        <div class="main_text">
+            <h1>Luyanda Sambo</h1>
+            <hr>
+            <h2>I love code, puzzles, games and all things computer.</h2>
+            <h2>Take a look at me and my work</h2>
+        </div>
+        <button id="Explore" onclick="scroll_to_about()">Explore Page</button>
+    </div>
+
+    <!--A small bit if extra information-->
+    <div class="about" id="about">
+        <!--We make a div so we can move the text around the about section-->
+        <div class="abt_text">
+            <h1>About Me</h1>
+            <h2>I am a game designer and programmer with an obsession with coding</h2>
+        </div>
+    </div>
+
+    <!--Links to other pages for past projects-->
+    <div class="projects" id="projects">
+        <h1>Projects</h1>
+
+        <!--A div for each project page link-->
+        <div id="game_div1">
+            <h3> Space Chase</h3>
+
+            <!--When this button is pressed the webpage will load anothe page-->
+            <button onclick="loadSpaceChase()">Visit Page</button>
+        </div>
+
+        <div id="game_div2">
+            <h3> Air Traffic</h3>
+            <!--When this button is pressed the webpage will load anothe page-->
+            <button onclick="loadAirTraffic()">Visit Page</button>
+       </div>
+       
+    </div>
+
+    <!--Contact section-->
+    <div id="contact">
+        <!--Div containing all the contact info and profiles-->
+        <div class="buttons">
+            <h1>Get In Contact:</h1>
+            <h2>sambobraver041@gmail.com</h2>
+            
+            <!--Links that lead to online profiles-->
+            <div id="links">
+                <h2>Online Profiles:</h2>
+                <a href="https://github.com/BrA-ver">Github - BrA-ver</a>
+                <br> <!--To aling the links vertically-->
+                <a href="https://keinon.itch.io/">Itch.io - Keynon</a>
+            </div>
+            
+        </div>
+        
+    </div>
+
+<!--Connect to the javascript file-->
+<script src="JS/index.js"></script>
+
+</body>
+</html>

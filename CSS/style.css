@@ -1,0 +1,315 @@
+/* General */
+
+/* Remove any paadding and margin in the page */
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+/* Set the font that the text in the body will use*/
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Set the page's scroll behaviour to smooth so the page will scroll to the selected section when a link is clicked*/
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+/*-----------------------------NAVIGATION BAR----------------------*/
+/*Style settings for small screens*/
+@media (max-width: 600px) {
+    .navigation {
+        /*Make th navigation bar smaller*/
+        height: 60px;
+    }
+
+    .navigation nav{
+        /*Place the nav bar near the left of the screen*/
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+
+    /*Make the navigation links smaller*/
+    .navigation a {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 600px) {
+    .navigation {
+        /*Make th navigation bar larger*/
+        height: 100px;
+    }
+
+    .navigation nav{
+        /*Place the nav bar near the right of the screen*/
+        margin-left: 75%;
+        margin-top: 30px;
+    }
+
+    /*Make the navigation links larger*/
+    .navigation a {
+        font-size: 35px;
+    }
+}
+
+/*Style that is applied to all version of the navigation bar*/
+.navigation{
+    /*Make the navigation bar scroll with the page*/
+    position: fixed;
+    /*Make the bar fill the page horizontally and make sure it's above anything else*/
+    width: 100%;
+    background-color: rgb(97, 162, 235);
+    z-index: 5;
+}
+
+/*Style for all the links of the navigation bar*/
+.navigation a {
+    /* Give every link an underline*/
+    text-decoration: none;
+    /* Set the color and font size of each link*/
+    color: rgb(198, 198, 198);
+    /* Give each link a margin so they can be spaced out*/
+    margin-right: 15px;
+}
+/*-------------------------------------------------------------------------------------------*/
+
+
+
+/*-----------------------------------Main Section---------------------------------------------*/
+@media (max-width: 600px) {
+    .main_text {
+        /*Move the main text near the top of the screen*/
+        position: relative;
+        top: 15%;
+    }
+
+    .main_text h1 {
+        /*Set the size of the heading*/
+        font-size: 55px;
+    }
+
+    .main_text h2 {
+        /*Set the size of the text*/
+        font-size: 25px;
+    }
+
+    .main button {
+        /*Set the position of the explore button*/
+        position: relative;
+        left: 50%;
+        top: 40%;
+    }
+}
+
+@media (min-width: 600px) {
+    .main_text {
+        /*Move the main text near the middle of the screen*/
+        position: relative;
+        top: 35%;
+    }
+
+    .main_text h1 {
+        /*Set the size of the heading*/
+        font-size: 70px;
+    }
+
+    .main_text h2 {
+        /*Set the size of the text*/
+        font-size: 30px;
+    }
+
+    .main button {
+        /*Set the position of the explore button*/
+        position: relative;
+        left: 50%;
+        top: 50%;
+    }
+}
+
+.main{
+    /*Set the background image of the main section and make it fill the div*/
+    background: url("../assets/Ghost.png");
+    background-size: cover;
+    background-position: center;
+
+    /*Set the size of the main section*/
+    width: 100%;
+    height: 900px;
+}
+
+.main_text{
+    /*Align the text to the middle of the screen and set it's colour*/
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+/*Style for the horizontal line*/
+hr{
+    /*Make the line center itself and set it's width*/
+    margin: auto;
+    width: 20%;
+    border: solid rgb(97, 162, 235);
+    /*Give the line a margin to put space between it and and text*/
+    margin-bottom: 50px;
+    
+}
+
+.main button{
+    /*Set size of the button and it's font*/
+    font-size: 30px;
+    width: 200px;
+    height: 70px;
+    /*Set the colour of the button and it's border and make it round along it's edges*/
+    background-color: rgb(97, 162, 235);
+    border: solid rgb(46, 119, 202);
+    border-radius: 30%;
+    left: 50%;
+    /*Center the button so it has no offest*/
+    transform: translate(-50%, -50%);
+}
+/*-----------------------------------------------------------------------*/
+
+
+
+/*---------------------------------About Section-----------------------------------------*/
+.about{
+    /*Set the background and size image of the about section*/
+    background: url("../assets/qmarks.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 600px;
+}
+
+.abt_text{
+    /*Position the text of the about section in the center*/
+    position: relative;
+    top: 10%;
+    margin-left: 60px;
+    text-align: center;
+}
+
+.abt_text h1 {
+    /*Adjust the size of the about text*/
+    font-size: 80px;
+    color: white;
+}
+
+.abt_text h2{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+
+}
+/*----------------------------------------------------------------------------------------*/
+
+/*-----------------------------------Projects Section--------------------------------------------------*/
+
+#projects {
+    /*Set the appearence of the projects section*/
+    width: 100%;
+    height: 400px;
+    background-color: rgb(51, 51, 51);
+}
+
+.projects h1{
+    /*Set the text of the project section*/
+    text-align: center;
+    font-size: 75px;
+    color: white;
+    text-decoration: underline;
+}
+
+#game_div1{
+    /*Center the game div*/
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    height: 35%;
+    /*Set the background image of the game div*/
+    background: url("../assets/Space_Chase_Gameplay.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 40px;
+}
+
+#game_div1 button{
+    /*Set up the appearence of the contact section*/
+    width: 300px;
+    height: 60px;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    font-size: 20px;
+    border: solid white 2px;
+    border-radius: 10%;
+}
+
+#game_div2{
+    /*Center the game div*/
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    height: 45%;
+    /*Set the background image of the game div*/
+    background: url("../assets/air_bg.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 40px;
+}
+
+#game_div2 button{
+    /*Set the appearence of the second game button*/
+    width: 300px;
+    height: 60px;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    font-size: 20px;
+    border: solid white 2px;
+    border-radius: 10%;
+}
+
+/*------------------------------------------------------------*/
+
+#contact {
+    /*Set up the appearence of the contact section*/
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 400px;
+    background-color: rgb(18, 19, 20);
+}
+
+#contact h1{
+    /*Set the colour of the contact heading*/
+    color: white;
+}
+
+#contact h2{
+    /*Set the colour of the contact text*/
+    color: white;
+}
+
+#contact a{
+    text-decoration: none;
+        /* Set the color and font size of each link*/
+        color: rgb(198, 198, 198);
+        font-size: 35px;
+}
+
+.buttons {
+    /*Give the buttons div some padding*/
+    position: relative;
+    margin-left: 10%;
+    top: 10%;
+}
+
+#links {
+    /*Put some space above the links div*/
+    margin-top: 40px;
+}
